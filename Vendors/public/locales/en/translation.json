@@ -1,0 +1,40 @@
+{
+  "Navbar": {
+    "Search": "Search..."
+  },
+  "Sidebar": {
+    "Dashboard": "Dashboard",
+    "Products": "Products",
+    "Orders": "Orders",
+    "Accounts": "Accounts",
+    "Vendor": "Vendor",
+    "Settings": "Settings",
+    "Logout": "Logout"
+  },
+
+  "Dashboard": {
+    "Title": "Dashboard",
+    "Subtitle": "Welcome to your dashboard",
+    "Total Items": "Total Items",
+    "Total Orders": "Total Orders",
+    "Total Sells": "Total Sells",
+    "Order Pending": "Order Pending"
+  },
+
+  "Orders": {
+    "Title": "Orders",
+    "Subtitle": "All Order List"
+  },
+
+  "Table": {
+    "ID": "ID",
+    "Order ID": "Order ID",
+    "Customer": "Customer",
+    "Total": "Total",
+    "Status": "Status",
+    "Date": "Date",
+    "Time": "Time",
+    "Action": "Action"
+
+  }
+}

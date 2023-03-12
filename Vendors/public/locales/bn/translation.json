@@ -1,0 +1,42 @@
+{
+  "Navbar": {
+    "Search": "অনুসন্ধান করুন..."
+  },
+
+  "Sidebar": {
+    "Dashboard": "ড্যাশবোর্ড",
+    "Products": "পণ্য",
+    "Orders": "অর্ডার",
+    "Accounts": "হিসাব সমূহ",
+    "Vendor": "ভেন্ডর",
+    "Settings": "সেটিংস",
+    "Logout": "লগ আউট"
+  },
+
+  "Dashboard":{
+    "Title": "ড্যাশবোর্ড",
+    "Subtitle" : "আপনার ড্যাশবোর্ডে স্বাগতম",
+    "Total Items": "মোট পণ্য",
+    "Total Orders": "মোট অর্ডার",
+    "Total Sells": "মোট বিক্রয়",
+    "Order Pending": "অর্ডার পেন্ডিং"
+  },
+
+  "Orders":{
+    "Title": "অর্ডার",
+    "Subtitle" : "আপনার অর্ডার সমূহ"
+  },
+
+  "Table" : {
+    "ID": "আইডি",
+    "Order ID": "অর্ডার নম্বর",
+    "Customer": "কাস্টমার",
+    "Total" : "মোট",
+    "Status": "স্ট্যাটাস",
+    "Date": "তারিখ",
+    "Time": "সময়",
+    "Action": "অ্যাকশন"
+
+  }
+
+}
