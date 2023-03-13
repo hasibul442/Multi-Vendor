@@ -20,32 +20,28 @@ import {
 } from "@mui/material";
 import { LockOutlined } from "@mui/icons-material";
 
-export default function Login({ status, canResetPassword }) {
+export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({
-        email: "",
-        password: "",
-        remember: "",
+        name: '',
+        email: '',
+        password: '',
+        password_confirmation: '',
     });
 
     useEffect(() => {
         return () => {
-            reset("password");
+            reset('password', 'password_confirmation');
         };
     }, []);
 
     const handleOnChange = (event) => {
-        setData(
-            event.target.name,
-            event.target.type === "checkbox"
-                ? event.target.checked
-                : event.target.value
-        );
+        setData(event.target.name, event.target.type === 'checkbox' ? event.target.checked : event.target.value);
     };
 
     const submit = (e) => {
         e.preventDefault();
 
-        post(route("login"));
+        post(route('register'));
     };
 
     return (
@@ -72,6 +68,7 @@ export default function Login({ status, canResetPassword }) {
                             alignItems: "center",
                         }}
                     >
+
                         <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
                             <LockOutlined />
                         </Avatar>
@@ -85,6 +82,18 @@ export default function Login({ status, canResetPassword }) {
                             onSubmit={submit}
                             sx={{ mt: 1 }}
                         >
+                            <TextField
+                                error={errors.name ? true : false}
+                                margin="normal"
+                                fullWidth
+                                label="Full Name"
+                                id="name"
+                                type="text"
+                                name="name"
+                                value={data.name}
+                                onChange={handleOnChange}
+                                helperText={errors.name}
+                            />
                             <TextField
                                 error={errors.email ? true : false}
                                 margin="normal"
@@ -108,19 +117,19 @@ export default function Login({ status, canResetPassword }) {
                                 value={data.password}
                                 onChange={handleOnChange}
                                 autoComplete="current-password"
+                                helperText={errors.password}
                             />
-                            <FormControlLabel
-                                sx={{ ml: 0.5 }}
-                                control={
-                                    <Checkbox
-                                        type="checkbox"
-                                        className="rounded mr-2"
-                                        value={data.remember}
-                                        onChange={handleOnChange}
-                                        name="remember"
-                                    />
-                                }
-                                label="Remember me"
+                            <TextField
+                                margin="normal"
+                                error={errors.password_confirmation ? true : false}
+                                fullWidth
+                                name="password_confirmation"
+                                label="Confirm Password"
+                                type="password"
+                                id="password_confirmation"
+                                value={data.password_confirmation}
+                                onChange={handleOnChange}
+                                autoComplete="new-password"
                             />
                             <Button
                                 type="submit"
@@ -133,20 +142,20 @@ export default function Login({ status, canResetPassword }) {
 
                             <Grid container>
                                 <Grid item xs>
-                                    <Link
+                                    {/* <Link
                                         href={route("password.request")}
                                         variant="body2"
                                     >
                                         {" "}
                                         Forgot password?{" "}
-                                    </Link>
+                                    </Link> */}
                                 </Grid>
                                 <Grid item>
                                     <Link
-                                        href={route("register")}
+                                        href={route("login")}
                                         variant="body1"
                                     >
-                                        {"Don't have an account? Sign Up"}
+                                        {"Have An Account? Sign In"}
                                     </Link>
                                 </Grid>
                             </Grid>
