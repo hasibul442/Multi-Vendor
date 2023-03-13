@@ -52,15 +52,14 @@ function NavBar() {
                     <IconButton>
                         <PersonOutline />
                     </IconButton>
-                    <IconButton>
                         <Link method="post"
                         href={route("logout")}
-                        style={{ padding : "0px", margin : "0px" }}
                         >
+                            <IconButton>
                             <LogoutOutlined />
+                    </IconButton>
                         </Link>
 
-                    </IconButton>
                 </Box>
             </Box>
         </>

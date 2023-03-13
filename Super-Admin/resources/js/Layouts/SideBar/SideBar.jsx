@@ -1,7 +1,7 @@
 import { tokens } from "@/themes";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@inertiajs/react";
 
 import { FoodBankOutlined, HomeOutlined, MenuOutlined } from "@mui/icons-material";
 
@@ -23,7 +23,7 @@ function Item(props) {
             icon={props.icon}
         >
             <Typography variant="h5">{props.title}</Typography>
-            {/* <Link to={props.to} /> */}
+            <Link href={props.to} />
         </MenuItem>
     );
 }
@@ -150,8 +150,8 @@ function SideBar() {
                                 setSelected={setSelected}
                             />
                             <Item
-                                title="Orders"
-                                to="/orders"
+                                title="Users"
+                                to="/users"
                                 icon={<FoodBankOutlined />}
                                 selected={selected}
                                 setSelected={setSelected}

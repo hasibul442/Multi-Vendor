@@ -16,7 +16,7 @@ export default function Authenticated({ auth, header, children }) {
                         <SideBar />
                         <div className="content">
                             <NavBar />
-                            <main>{children}</main>
+                            <main className="mx-5">{children}</main>
                         </div>
                     </div>
                 </ThemeProvider>
