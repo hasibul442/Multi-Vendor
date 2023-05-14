@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import './App.css'
-import { Router } from 'react-router-dom'
-import Navbar from './Include/Navbar'
-
+import { useState } from "react";
+import "./App.css";
+import { Router } from "react-router-dom";
+import Navbar from "./Include/Navbar";
+import "./i18n.js";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       </Router> */}
       <Navbar />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

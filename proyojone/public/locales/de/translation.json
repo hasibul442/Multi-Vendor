@@ -1,0 +1,9 @@
+{
+    "TopBar": {
+        "login": "Login",
+        "logout": "Uitloggen",
+        "register": "Register",
+        "help": "Hulp",
+        "feedback": "Feedback"
+    } 
+}

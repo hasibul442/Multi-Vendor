@@ -1,0 +1,9 @@
+{
+    "TopBar": {
+        "login": "Conecte-se",
+        "logout": "Sair",
+        "register": "Registro",
+        "help": "Ajuda",
+        "feedback": "Opinião"
+    } 
+}

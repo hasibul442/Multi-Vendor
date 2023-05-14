@@ -1,87 +1,63 @@
-.navbar-background {
-    position: absolute;
-    z-index: 10;
-    background: #00B4DB;
-    background: -webkit-linear-gradient(to top, #00B4DB, #0083B0);
-    background: linear-gradient(to top, #00B4DB, #0083B0);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    color: #fff;
-    width: 100%;
-  }
-  .nav-item {
-    padding: 0.5rem 2rem;
-  }
-  .nav-link {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
+.topBar {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.topBar .nav-item {
+    padding-right: 15px;
+    margin: 5px 15px 5px 0px;
+    border-right: 1px solid #000;
+}
+.topBar .nav-item:last-child {
+    border-right: none;
+    padding-right: 0px
+}
+.topBar .nav-link {
+    width: auto;
+    padding: 0;
+    height: auto;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
-  }
-  .nav-link:hover {
-    color: #fff;
-  }
-  
-  .nav-search {
-    background-color: transparent;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+}
+.topBar .dropdown-menu {
+    border-radius: 0px;
     border: none;
-    outline: none;
-    color: #fff;
+    box-shadow: 0px 5px 5px #00b3db80;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.topBar .dropdown-menu a {
+  cursor: pointer;
+}
+.navbar-background {
+  position: absolute;
+  z-index: 10;
+  background: #00b4db;
+  background: -webkit-linear-gradient(to top, #00b4db, #0083b0);
+  background: linear-gradient(to top, #00b4db, #0083b0);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  color: #fff;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.navbar-background .nav-item {
+  padding: 0.5rem 1rem;
+}
+.navbar-background .nav-link {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-background .nav-link:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .topBar {
+    display: none;
   }
-  
-  .search-box{
-    width: fit-content;
-    height: fit-content;
-    position: relative;
-  }
-  .input-search{
-    height: 50px;
-    width: 50px;
-    border-style: none;
-    padding: 10px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    outline: none;
-    border-radius: 25px;
-    transition: all .5s ease-in-out;
-    background-color: #c21010c1;
-    padding-right: 40px;
-    color:#fff;
-  }
-  .input-search::placeholder{
-    color:rgba(255,255,255,.5);
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 100;
-  }
-  .btn-search{
-    width: 50px;
-    height: 50px;
-    border-style: none;
-    font-size: 20px;
-    font-weight: bold;
-    outline: none;
-    cursor: pointer;
-    border-radius: 50%;
-    position: absolute;
-    right: 0px;
-    color:#ffffff ;
-    background-color:transparent;
-    pointer-events: painted;  
-  }
-  .btn-search:focus ~ .input-search{
-    width: 300px;
-    border-radius: 0px;
-    background-color: transparent;
-    border-bottom:1px solid rgba(255,255,255,.5);
-    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
-  }
-  .input-search:focus{
-    width: 300px;
-    border-radius: 0px;
-    background-color: transparent;
-    border-bottom:1px solid rgba(255,255,255,.5);
-    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
-  }
-  
+}

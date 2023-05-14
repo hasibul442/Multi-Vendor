@@ -1,0 +1,9 @@
+{
+    "TopBar": {
+        "login": "Connexion",
+        "logout": "Se déconnecter",
+        "register": "Enregistrer",
+        "help": "Sider",
+        "feedback": "Retour"
+    } 
+}
