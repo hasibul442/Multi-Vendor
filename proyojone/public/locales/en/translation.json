@@ -5,5 +5,8 @@
         "register": "Register",
         "help": "Help",
         "feedback": "Feedback"
+    },
+    "Navbar" : {
+        "search": "Search in proyojone"
     }
 }

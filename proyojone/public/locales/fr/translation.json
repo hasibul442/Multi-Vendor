@@ -5,5 +5,8 @@
         "register": "Enregistrer",
         "help": "Sider",
         "feedback": "Retour"
-    } 
+    },
+    "Navbar" : {
+        "search": "Rechercher dans proyojone"
+    }
 }

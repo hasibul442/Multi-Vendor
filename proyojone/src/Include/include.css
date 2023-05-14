@@ -31,11 +31,11 @@
   cursor: pointer;
 }
 .navbar-background {
-  position: absolute;
+  position: relative;
   z-index: 10;
-  background: #00b4db;
-  background: -webkit-linear-gradient(to top, #00b4db, #0083b0);
-  background: linear-gradient(to top, #00b4db, #0083b0);
+  background: #74ebd5;
+  background: -webkit-linear-gradient(to top, #74ebd596,#74ebd596);
+  background: linear-gradient(to top,#74ebd596, #74ebd596);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   color: #fff;
@@ -45,17 +45,37 @@
 .navbar-background .nav-item {
   padding: 0.5rem 1rem;
 }
-.navbar-background .nav-link {
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
+.cart-btn{
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.4rem 0.5rem;
+  box-shadow: 0px 5px 5px #00b3db80;
+  color: #00b3db;
+  cursor: pointer;
 }
-.navbar-background .nav-link:hover {
+.cart-btn:hover{
+  background-color: #00b3db;
   color: #fff;
 }
-
+.search-btn{
+  background-color: #fff;
+  border-radius: 50%;
+  color: #00b3db;
+}
+.search-btn:hover{
+  background-color: #00b3db;
+  color: #fff;
+}
+.search-input{
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.search-input:focus{
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
 @media screen and (max-width: 991px) {
   .topBar {
     display: none;

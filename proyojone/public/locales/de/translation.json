@@ -5,5 +5,8 @@
         "register": "Register",
         "help": "Hulp",
         "feedback": "Feedback"
-    } 
+    } ,
+    "Navbar" : {
+        "search": "Zoek in proyojone"
+    }
 }

@@ -5,5 +5,8 @@
         "register": "Registro",
         "help": "Ajuda",
         "feedback": "Opinião"
-    } 
+    },
+    "Navbar": {
+        "search": "Procure em proyojone"
+    }
 }

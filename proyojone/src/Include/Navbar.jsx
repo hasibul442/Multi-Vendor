@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./include.css";
-import { useTranslation } from 'react-i18next';
-
+import { useTranslation } from "react-i18next";
+import { BsCartPlus, BsCartPlusFill, BsSearch } from "react-icons/bs";
+import { CgProfile } from "react-icons/cg";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [language, setLanguage] = useState("English");
-  const { i18n,t } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   const handleLanguage = (e) => {
     const lang = e.target.name;
@@ -93,7 +95,7 @@ function Navbar() {
               </li>
               <li>
                 <a className="dropdown-item" name="pt" onClick={handleLanguage}>
-                Português (pt)
+                  Português (pt)
                 </a>
               </li>
               <li>
@@ -105,6 +107,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
+
       <div>
         <nav className="navbar navbar-expand-lg navbar-background">
           <div className="container">
@@ -119,40 +122,47 @@ function Navbar() {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <a className="navbar-brand text-light" href="#">
-              Navbar
-            </a>
+            <Link className="navbar-brand text-dark mx-5" to="/">
+              <img src="/image/logo/logo.png" className="img-fluid w-75" alt="" />
+            </Link>
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Genres
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Movies
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Tv Shows
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Series
-                  </a>
-                </li>
-              </ul>
+              <div className="input-group my-2">
+                <input
+                  type="text"
+                  className="form-control search-input"
+                  placeholder={t("Navbar.search")}
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  className="btn search-btn"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <BsSearch />
+                </button>
+              </div>
+              <div className="mx-3 my-2">
+              <button
+                  className="btn cart-btn"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <BsCartPlusFill size={18}/>
+                </button>
+              </div>
+              {/* <div className="mx-1">
+              <button
+                  className="btn cart-btn"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <CgProfile size={18}/>
+                </button>
+              </div> */}
             </div>
           </div>
         </nav>
